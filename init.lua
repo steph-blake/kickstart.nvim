@@ -886,7 +886,10 @@ require('lazy').setup({
     config = function()
       ---@diagnostic disable-next-line: missing-fields
       require('dracula').setup {
-        transparent = true,
+        transparent_bg = true,
+        colors = {
+          comment = '#d3d3d3',
+        },
         styles = {
           comments = { italic = false }, -- Disable italics in comments
           sidebars = 'transparent',
